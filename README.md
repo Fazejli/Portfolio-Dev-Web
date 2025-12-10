@@ -1,4 +1,4 @@
-# Mon Portfolio (Neumorphism)
+# Mon Portfolio
 
 
 ## Installation
@@ -29,8 +29,3 @@ npm run build
 
 
 ---
-
-
-**Notes** :
-- Remplace les valeurs `votre.email@example.com` et les liens GitHub/Demo par les tiens.
-- Tu peux ajouter des images dans `public/` et référencer via `/public/image.png`.
