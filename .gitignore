@@ -77,8 +77,3 @@ Thumbs.db
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
-
-# Package managers
-package-lock.json
-yarn.lock
-pnpm-lock.yaml
