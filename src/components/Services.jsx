@@ -38,7 +38,6 @@ Toujours avec le sourire 😄 et un café à la main !`
   return (
     <section className="py-20 px-6 bg-slate-900/50">
       <div className="max-w-6xl mx-auto">
-        {/* Bio avec photo */}
         <div className="text-center mb-12 max-w-3xl mx-auto flex flex-col items-center gap-4">
           <img 
             src="/photo.jpg"
@@ -48,9 +47,8 @@ Toujours avec le sourire 😄 et un café à la main !`
           <p className="text-lg text-slate-300">{bio}</p>
         </div>
 
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">Services</h2>
-          <p className="text-xl text-slate-400">Ce que je peux faire pour vous:</p>
+        <div className="text mb-16">
+          <p className="text-xl text-slate-100">Ce que je peux faire pour vous:</p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
