@@ -184,7 +184,7 @@ export const projects = [
     ],
     github: 'https://github.com/Fazejli/Projects-C/tree/main/fdf',
     demo: '',
-    image: 'A ajouter',
+    image: '',
   },
   {
     id: 'minishell',
@@ -200,7 +200,7 @@ export const projects = [
       'Gestion mémoire rigoureuse (aucune fuite)'
     ],
     github: '',
-    demo: '',
-    image: `${import.meta.env.BASE_URL}minishell.png`,
+    demo: `${import.meta.env.BASE_URL}minishell.png`,
+    image: '',
   },
 ]
