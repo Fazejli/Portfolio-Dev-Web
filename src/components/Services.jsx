@@ -13,7 +13,7 @@ Toujours avec le sourire 😄 et un café à la main !`
       title: 'Mon CV',
       description: 'Téléchargez mon CV pour découvrir mon parcours complet et mes compétences techniques.',
       features: ['Formation 42 Paris', 'Projets 42 et Freelance', 'Compétences en développement web et 3D'],
-      link: '/CV.pdf'
+      link: '/cv.pdf'
     },
     {
       icon: <Code2 className="w-8 h-8" />,

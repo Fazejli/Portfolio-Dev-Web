@@ -201,6 +201,6 @@ export const projects = [
     ],
     github: 'Pas encore pret',
     demo: '',
-    image: '',
+    image: '/minishell.png',
   },
 ]
