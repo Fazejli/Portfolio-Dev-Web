@@ -2,6 +2,7 @@
   "name": "Mon Portfolio",
   "version": "1.0.0",
   "private": true,
+  "homepage": "https://Fazejli.github.io/Portfolio-Dev-Web/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -23,3 +24,4 @@
     "vite": "^5.1.0"
   }
 }
+

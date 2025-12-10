@@ -1,6 +1,5 @@
 import React from 'react'
 import { CheckCircle, FileCode, Code2, Zap, Briefcase } from 'lucide-react'
-import profilePic from '../../public/Photo.JPG'
 
 export default function Services({ onSelect }) {
 
@@ -14,7 +13,7 @@ Toujours avec le sourire 😄 et un café à la main !`
       title: 'Mon CV',
       description: 'Téléchargez mon CV pour découvrir mon parcours complet et mes compétences techniques.',
       features: ['Formation 42 Paris', 'Projets 42 et Freelance', 'Compétences en développement web et 3D'],
-      link: '/public/CV.pdf'
+      link: '/CV.pdf'
     },
     {
       icon: <Code2 className="w-8 h-8" />,
@@ -42,8 +41,8 @@ Toujours avec le sourire 😄 et un café à la main !`
         {/* Bio avec photo */}
         <div className="text-center mb-12 max-w-3xl mx-auto flex flex-col items-center gap-4">
           <img 
-            src={profilePic} 
-            alt="Alfatac" 
+            src="/photo.jpg"
+            alt="Moi" 
             className="w-32 h-32 rounded-full border-4 border-blue-500/50 shadow-lg"
           />
           <p className="text-lg text-slate-300">{bio}</p>
@@ -51,7 +50,7 @@ Toujours avec le sourire 😄 et un café à la main !`
 
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">Services</h2>
-          <p className="text-xl text-slate-400">Ce que je peux faire pour vous</p>
+          <p className="text-xl text-slate-400">Ce que je peux faire pour vous:</p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
