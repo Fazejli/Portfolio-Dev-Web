@@ -13,7 +13,7 @@ Toujours avec le sourire 😄 et un café à la main !`
       title: 'Mon CV',
       description: 'Téléchargez mon CV pour découvrir mon parcours complet et mes compétences techniques.',
       features: ['Formation 42 Paris', 'Projets 42 et Freelance', 'Compétences en développement web et 3D'],
-      link: '/cv.pdf'
+      link: `${import.meta.env.BASE_URL}CV.pdf`
     },
     {
       icon: <Code2 className="w-8 h-8" />,
@@ -40,7 +40,7 @@ Toujours avec le sourire 😄 et un café à la main !`
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12 max-w-3xl mx-auto flex flex-col items-center gap-4">
           <img 
-            src="/photo.jpg"
+            src={`${import.meta.env.BASE_URL}photo.jpg`}
             alt="Moi" 
             className="w-32 h-32 rounded-full border-4 border-blue-500/50 shadow-lg"
           />

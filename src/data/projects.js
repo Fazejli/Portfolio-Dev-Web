@@ -199,8 +199,8 @@ export const projects = [
       'Builtins: echo, cd, pwd, export, unset, env, exit',
       'Gestion mémoire rigoureuse (aucune fuite)'
     ],
-    github: 'Pas encore pret',
+    github: '',
     demo: '',
-    image: '/minishell.png',
+    image: `${import.meta.env.BASE_URL}minishell.png`,
   },
 ]
