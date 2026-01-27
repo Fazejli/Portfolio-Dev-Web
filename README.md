@@ -2,7 +2,8 @@
 
 ## 📖 Description
 
-Bienvenue sur mon portfolio de développement web ! Ce projet présente mes compétences, mes projets et mon expérience en développement web.
+Bienvenue sur mon portfolio !
+Découvrez mes projets, mes compétences techniques et mon parcours en développement et conception de solutions informatiques.
 
 ## 🚀 Fonctionnalités
 
@@ -35,19 +36,14 @@ cd Portfolio-Dev-Web
 
 Ouvrez simplement le fichier `index.html` dans votre navigateur web préféré pour visualiser le portfolio.
 
-## 🤝 Contribution
-
-Les contributions sont les bienvenues ! N'hésitez pas à :
-
-1. Fork le projet
-2. Créer une branche pour votre fonctionnalité (`git checkout -b feature/AmazingFeature`)
-3. Commit vos changements (`git commit -m 'Add some AmazingFeature'`)
-4. Push vers la branche (`git push origin feature/AmazingFeature`)
-5. Ouvrir une Pull Request
 
 ## 📝 License
 
-Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
+© [2025] [ZEJLI]. Tous droits réservés.
+Voir le fichier [LICENSE](LICENSE) pour plus de détails.
+
+Toute utilisation (reproduction, modification distribution, intégration) est interdite sans autorisation écrite préalable.
+
 
 ## 📧 Contact
 
