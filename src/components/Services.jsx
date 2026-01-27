@@ -47,7 +47,7 @@ Toujours avec le sourire 😄 et un café à la main !`
           <p className="text-lg text-slate-300">{bio}</p>
         </div>
 
-        <div className="text mb-16">
+        <div className="text-center mb-16">
           <p className="text-xl text-slate-100">Ce que je peux faire pour vous:</p>
         </div>
 
