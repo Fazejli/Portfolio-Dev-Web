@@ -255,7 +255,7 @@ export const projects = [
       'Module 04: Polymorphisme de sous-typage, classes abstraites',
       'Orthodox Canonical Form pour toutes les classes'
     ],
-    github: 'https://github.com/Fazejli/Projects-CPP/tree/main/CPP',
+    github: 'https://github.com/Fazejli/Projects-CPP',
     demo: '',
     image: '',
   },
@@ -272,7 +272,7 @@ export const projects = [
       'Design patterns (Factory, Strategy, Observer)',
       'Code générique et réutilisable'
     ],
-    github: 'https://github.com/Fazejli/Projects-CPP/tree/main/CPP',
+    github: '',
     demo: '',
     image: '',
   },
