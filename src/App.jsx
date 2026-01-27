@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import ScrollToTop from './components/ScrollToTop'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import ProjectModal from './components/ProjectModal'
@@ -13,6 +14,7 @@ export default function App() {
 
   return (
     <Router basename="/Portfolio-Dev-Web">
+      <ScrollToTop />
       <div className="min-h-screen px-6 md:px-20 py-8">
         <Header />
         
