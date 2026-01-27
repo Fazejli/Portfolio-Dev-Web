@@ -44,10 +44,17 @@ export default function Services({ onSelect }) {
               key={index}
               className="bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-xl p-8 hover:border-blue-500/50 transition-all"
             >
-              <div className="w-16 h-16 bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-xl flex items-center justify-center mb-6 text-blue-400">
-                {service.icon}
+              {/* icône + titre */}
+              <div className="flex items-center gap-3 mb-4 text-blue-400 flex-wrap">
+                <div className="w-12 h-12 rounded-xl neu-inset flex items-center justify-center">
+                  {service.icon}
+                </div>
+
+                <h4 className="text-base md:text-xl font-bold max-w-full">
+                  {service.title}
+                </h4>
               </div>
-              <h4 className="text-xl font-bold mb-3">{service.title}</h4>
+
               <p className="text-slate-400 mb-4">{service.description}</p>
 
               <ul className="space-y-2 mb-4">

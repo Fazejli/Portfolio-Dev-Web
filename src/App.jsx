@@ -17,8 +17,8 @@ export default function App() {
         <Header />
         
         <Routes>
-          <Route path="/" element={<Home onSelect={setSelectedProject} />} />
-          <Route path="/about" element={<AboutPage />} />
+          <Route path="/" element={<Home/>} />
+          <Route path="/about" element={<AboutPage onSelect={setSelectedProject} />} />
           <Route path="/projects" element={<ProjectsPage onSelect={setSelectedProject} />} />
           <Route path="/contact" element={<ContactPage />} />
         </Routes>

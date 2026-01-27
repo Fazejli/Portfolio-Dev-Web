@@ -1,6 +1,6 @@
 import React from 'react'
-import Projects from '../components/Projects'
+import Hero from '../components/Hero'
 
-export default function ProjectsPage({ onSelect }) {
-  return <Projects onSelect={onSelect} />
+export default function Home({ onSelect }) {
+  return <Hero />
 }
