@@ -63,7 +63,7 @@ export default function About() {
 
       <div className="mt-8 text-center">
         <p className="text-slate-400">
-          🎯 Actuellement en recherche de missions freelance et opportunités professionnelles
+          🎯 Actuellement en recherche de missions freelance et opportunités professionnelles.
         </p>
       </div>
     </section>

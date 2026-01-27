@@ -3,8 +3,9 @@ import { CheckCircle, FileCode, Code2, Zap, Briefcase } from 'lucide-react'
 
 export default function Services({ onSelect }) {
 
-  const bio = `Salut ! Je suis Fadwa, étudiante à 42 Paris et développeuse web passionnée par la 3D. 
-J'adore transformer des lignes de code en expériences visuelles immersives et rendre vos projets performants. 
+  const bio = `Salut ! Je suis Fadwa, étudiante à 42 Paris, développeuse web et future spécialiste cybersécurité.
+J’aime créer des expériences visuelles immersives, mais aussi sécuriser chaque couche d’un projet : backend, frontend, infrastructure.
+Je suis passionnée par la détection de vulnérabilités, le pentest et le développement sécurisé.
 Toujours avec le sourire 😄 et un café à la main !`
 
   const services = [
