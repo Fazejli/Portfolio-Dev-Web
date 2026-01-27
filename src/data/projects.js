@@ -101,7 +101,7 @@ export const projects = [
     demo: '',
     image: '',
   },
-    {
+  {
     id: 'get-next-line',
     title: 'Get Next Line',
     subtitle: 'Lecture ligne par ligne (42 🎓)',
@@ -197,10 +197,83 @@ export const projects = [
       'Variables d\'environnement et expansion',
       'Signaux (Ctrl-C, Ctrl-D, Ctrl-\\)',
       'Builtins: echo, cd, pwd, export, unset, env, exit',
-      'Gestion mémoire rigoureuse (aucune fuite)'
+      'Gestion mémoire rigoureuse (aucune fuite)',
+      'Opérateurs logiques (&& et ||) avec priorité et parenthèses',
+      'Wildcards (*) pour expansion de fichiers',
+      'Gestion avancée des redirections multiples',
+      'Support de sous-shells',
+      'Amélioration de la gestion des erreurs'
     ],
-    github: '',
+    github: 'https://github.com/Fazejli/minishell',
     demo: `${import.meta.env.BASE_URL}minishell.png`,
+    image: '',
+  },
+  {
+    id: 'netpractice',
+    title: 'NetPractice',
+    subtitle: 'Configuration réseaux et adressage IP (42 🎓)',
+    technologies: ['Réseau', 'TCP/IP', 'Subnetting', 'Routing'],
+    features: [
+      'Calcul et configuration de sous-réseaux',
+      'Adressage IP et masques de sous-réseau',
+      'Configuration de tables de routage',
+      'Résolution de problèmes réseau pratiques',
+      'Comprendre NAT et passerelles',
+      '10 niveaux de difficulté croissante'
+    ],
+    github: 'https://github.com/Fazejli/NetPractice',
+    demo: `${import.meta.env.BASE_URL}netPractice.jpg`,
+    image: '',
+  },
+  {
+    id: 'cub3d',
+    title: '🌟 Cub3D',
+    subtitle: 'Moteur de rendu 3D type Wolfenstein (42 🎓)',
+    technologies: ['C', 'MiniLibX', 'Raycasting', '3D Graphics', 'Parsing'],
+    features: [
+      'Rendu 3D en temps réel avec raycasting',
+      'Textures pour murs (Nord, Sud, Est, Ouest)',
+      'Sprites animés (ennemis, objets)',
+      'Minimap interactive en temps réel',
+      'Déplacement fluide (WASD) et rotation (flèches)',
+      'Parser de fichiers .cub avec validation'
+    ],
+    github: 'https://github.com/Fazejli/Cub3D',
+    demo: '',
+    image: '',
+  },
+  {
+    id: 'cpp-modules',
+    title: 'C++ Modules (00-04)',
+    subtitle: 'Introduction à la POO en C++ (42 🎓)',
+    technologies: ['C++', 'OOP', 'Classes', 'Polymorphism'],
+    features: [
+      'Module 00: Namespaces, classes, member functions',
+      'Module 01: Memory allocation, references, pointers',
+      'Module 02: Polymorphisme ad-hoc, surcharge d\'opérateurs',
+      'Module 03: Héritage et encapsulation',
+      'Module 04: Polymorphisme de sous-typage, classes abstraites',
+      'Orthodox Canonical Form pour toutes les classes'
+    ],
+    github: 'https://github.com/Fazejli/Projects-CPP/tree/main/CPP',
+    demo: '',
+    image: '',
+  },
+  {
+    id: 'cpp-modules-advanced',
+    title: 'C++ Modules (05-09)',
+    subtitle: 'Concepts avancés C++ (42 🎓)',
+    technologies: ['C++', 'Templates', 'STL', 'Exceptions', 'Iterators'],
+    features: [
+      'Module 05-06: Exceptions, try/catch, gestion d\'erreurs',
+      'Module 07-08: Templates de fonctions et de classes',
+      'Module 08: Conteneurs STL (vector, list, map, stack)',
+      'Module 09: Algorithmes STL et itérateurs avancés',
+      'Design patterns (Factory, Strategy, Observer)',
+      'Code générique et réutilisable'
+    ],
+    github: 'https://github.com/Fazejli/Projects-CPP/tree/main/CPP',
+    demo: '',
     image: '',
   },
 ]

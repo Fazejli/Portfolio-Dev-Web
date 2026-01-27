@@ -3,36 +3,48 @@ import { projects } from '../data/projects'
 
 
 export default function Projects({ onSelect }){
-const [filter, setFilter] = useState('all')
+  const [filter, setFilter] = useState('all')
 
 
-const filtered = projects.filter(p => {
+  const filtered = projects.filter(p => {
     if (filter === 'all') return true
     if (filter === 'web') return p.technologies.some(t => 
       ['React', 'Tailwind', 'Vite', 'JavaScript', 'GitHub Pages'].includes(t)
     )
     if (filter === 'c') return p.technologies.includes('C')
+    if (filter === 'cpp') return p.technologies.includes('C++')
     if (filter === 'python') return p.technologies.includes('Python')
     if (filter === 'system') return p.technologies.some(t => 
       ['Unix', 'Debian', 'Processes', 'Threads'].includes(t)
     )
+    if (filter === 'graphics') return p.technologies.some(t => 
+      ['MiniLibX', 'Raycasting', '3D Graphics', 'Graphisme'].includes(t)
+    )
+    if (filter === 'network') return p.technologies.some(t => 
+      ['Réseau', 'TCP/IP', 'Subnetting', 'Routing'].includes(t)
+    )
     return false
   })
+
   const filterButtons = [
     { id: 'all', label: 'Tous', emoji: '🌐' },
     { id: 'web', label: 'Web', emoji: '💻' },
     { id: 'c', label: 'C/Algo', emoji: '⚙️' },
+    { id: 'cpp', label: 'C++', emoji: '🔧' },
     { id: 'system', label: 'Système', emoji: '🖥️' },
+    { id: 'graphics', label: 'Graphique', emoji: '🎮' },
+    { id: 'network', label: 'Réseau', emoji: '🌐' },
     { id: 'python', label: 'Python', emoji: '🐍' },
   ]
-return (
-<section id="projects" className="my-20">
-    <h3 className="text-3xl font-semibold mb-8 text-center">Projets & Réalisations</h3>
-    <p className="text-center text-slate-400 mb-8 max-w-2xl mx-auto">
-        Une sélection de mes projets : sites web clients, projets 42 Paris, et scripts d'automatisation
-    </p>
 
-    <div className="flex justify-center gap-3 mb-10 flex-wrap">
+  return (
+    <section id="projects" className="my-20">
+      <h3 className="text-3xl font-semibold mb-8 text-center">Projets & Réalisations</h3>
+      <p className="text-center text-slate-400 mb-8 max-w-2xl mx-auto">
+        Une sélection de mes projets : sites web clients, projets 42 Paris, et scripts d'automatisation
+      </p>
+
+      <div className="flex justify-center gap-3 mb-10 flex-wrap">
         {filterButtons.map(btn => (
           <button 
             key={btn.id}
@@ -46,6 +58,7 @@ return (
           </button>
         ))}
       </div>
+
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         {filtered.map(p => (
           <article 
