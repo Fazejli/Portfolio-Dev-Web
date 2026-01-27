@@ -1,33 +1,34 @@
 import React, { useState } from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Header from './components/Header'
-import Hero from './components/Hero'
-import Services from './components/Services'
-import About from './components/About'
-import Projects from './components/Projects'
-import ProjectModal from './components/ProjectModal'
-import Contact from './components/Contact'
 import Footer from './components/Footer'
+import ProjectModal from './components/ProjectModal'
+import Home from './pages/Home'
+import AboutPage from './pages/AboutPage'
+import ProjectsPage from './pages/ProjectsPage'
+import ContactPage from './pages/ContactPage'
 
+export default function App() {
+  const [selectedProject, setSelectedProject] = useState(null)
 
+  return (
+    <Router basename="/Portfolio-Dev-Web">
+      <div className="min-h-screen px-6 md:px-20 py-8">
+        <Header />
+        
+        <Routes>
+          <Route path="/" element={<Home onSelect={setSelectedProject} />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/projects" element={<ProjectsPage onSelect={setSelectedProject} />} />
+          <Route path="/contact" element={<ContactPage />} />
+        </Routes>
 
-export default function App(){
-const [selectedProject, setSelectedProject] = useState(null)
+        <Footer />
 
-
-return (
-<div className="min-h-screen px-6 md:px-20 py-8">
-<Header />
-<Hero />
-<Services onSelect={setSelectedProject} />
-<About />
-<Projects onSelect={setSelectedProject} />
-<Contact />
-<Footer />
-
-
-{selectedProject && (
-<ProjectModal project={selectedProject} onClose={() => setSelectedProject(null)} />
-)}
-</div>
-)
+        {selectedProject && (
+          <ProjectModal project={selectedProject} onClose={() => setSelectedProject(null)} />
+        )}
+      </div>
+    </Router>
+  )
 }
