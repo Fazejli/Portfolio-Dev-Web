@@ -21,13 +21,12 @@ export default function About() {
   ]
 
   return (
-    <section id="about" className="my-20 max-w-6xl mx-auto">
+    <section id="about" className="my-5 max-w-6xl mx-auto">
       <h3 className="text-3xl font-semibold mb-8 text-center">À propos de moi</h3>
       
       <div className="neu-card p-8 mb-8">
         <p className="text-slate-300 mb-4 text-lg">
-          👋 Bonjour ! Je suis <span className="text-blue-400 font-semibold">Fadwa</span>, 
-          étudiante à <span className="font-semibold">42 Paris</span> et développeuse web passionnée 
+          👋 Je suis étudiante à <span className="font-semibold">42 Paris</span> et développeuse passionnée 
           par la création d'expériences numériques innovantes.
         </p>
         <p className="text-slate-300 mb-4">
@@ -63,7 +62,7 @@ export default function About() {
 
       <div className="mt-8 text-center">
         <p className="text-slate-400">
-          🎯 Actuellement en recherche de missions freelance et opportunités professionnelles.
+          🎯 Actuellement en recherche de missions freelance et opportunités professionnelles
         </p>
       </div>
     </section>

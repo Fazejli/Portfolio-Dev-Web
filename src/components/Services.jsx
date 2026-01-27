@@ -32,22 +32,13 @@ export default function Services({ onSelect }) {
   ]
 
   return (
-    <section className="py-20 px-6 bg-slate-900/50">
+    <section id="services" className="py-12 px-6 bg-slate-900/50">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-12 max-w-3xl mx-auto flex flex-col items-center gap-4">
-          <img 
-            src={`${import.meta.env.BASE_URL}photo.jpg`}
-            alt="Moi" 
-            className="w-32 h-32 rounded-full border-4 border-blue-500/50 shadow-lg"
-          />
-          <p className="text-lg text-slate-300">{bio}</p>
+        <div className="text-center mb-12">
+          <h3 className="text-3xl font-semibold mb-4">Ce que je peux faire pour vous</h3>
         </div>
 
-        <div className="text-center mb-16">
-          <p className="text-xl text-slate-100">Ce que je peux faire pour vous:</p>
-        </div>
-
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service, index) => (
             <div
               key={index}
@@ -56,7 +47,7 @@ export default function Services({ onSelect }) {
               <div className="w-16 h-16 bg-gradient-to-br from-blue-500/20 to-purple-500/20 rounded-xl flex items-center justify-center mb-6 text-blue-400">
                 {service.icon}
               </div>
-              <h3 className="text-2xl font-bold mb-3">{service.title}</h3>
+              <h4 className="text-xl font-bold mb-3">{service.title}</h4>
               <p className="text-slate-400 mb-4">{service.description}</p>
 
               <ul className="space-y-2 mb-4">

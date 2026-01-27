@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import Header from './components/Header'
 import Hero from './components/Hero'
-import About from './components/About'
 import Services from './components/Services'
+import About from './components/About'
 import Projects from './components/Projects'
 import ProjectModal from './components/ProjectModal'
 import Contact from './components/Contact'
@@ -18,8 +18,8 @@ return (
 <div className="min-h-screen px-6 md:px-20 py-8">
 <Header />
 <Hero />
-<About />
 <Services onSelect={setSelectedProject} />
+<About />
 <Projects onSelect={setSelectedProject} />
 <Contact />
 <Footer />

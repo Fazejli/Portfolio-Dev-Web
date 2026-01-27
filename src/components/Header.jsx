@@ -9,8 +9,8 @@ export default function Header(){
       </div>
 
       <nav className="flex gap-6 text-slate-300 text-sm md:text-base">
-        <a href="#about" className="hover:text-white transition">À propos</a>
         <a href="#services" className="hover:text-white transition">Services</a>
+        <a href="#about" className="hover:text-white transition">À propos</a>
         <a href="#projects" className="hover:text-white transition">Projets</a>
         <a href="#contact" className="hover:text-white transition">Contact</a>
       </nav>
