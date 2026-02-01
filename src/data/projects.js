@@ -204,7 +204,7 @@ export const projects = [
       'Support de sous-shells',
       'Amélioration de la gestion des erreurs'
     ],
-    github: 'https://github.com/Fazejli/minishell',
+    github: 'https://github.com/Fazejli/Projects-C/tree/main/minishell',
     demo: `${import.meta.env.BASE_URL}minishell.png`,
     image: '',
   },
