@@ -110,159 +110,64 @@ export const projects = [
   },
 
   // ========== PROJETS ÉCOLE 42 ==========
-  {
-    id: 'libft',
-    title: 'Libft',
-    subtitle: 'Bibliothèque C personnalisée',
+    {
+    id: 'cub3d',
+    title: '🌟 Cub3D',
+    subtitle: 'Moteur de rendu 3D type Wolfenstein',
     category: 'school',
-    technologies: ['C', 'Librairie', 'Makefile'],
+    technologies: ['C', 'MiniLibX', 'Raycasting', '3D Graphics', 'Parsing'],
     features: [
-      'Réimplémentation de 40+ fonctions standard C',
-      'Fonctions de manipulation de strings',
-      'Fonctions de manipulation de mémoire',
-      'Gestion de listes chaînées',
-      'Makefile avec règles (all, clean, fclean, re)',
-      'Base pour tous les projets 42 suivants'
+      'Rendu 3D en temps réel avec raycasting',
+      'Textures pour murs (Nord, Sud, Est, Ouest)',
+      'Sprites animés (ennemis, objets)',
+      'Minimap interactive en temps réel',
+      'Déplacement fluide (WASD) et rotation (flèches)',
+      'Parser de fichiers .cub avec validation'
     ],
-    github: 'https://github.com/Fazejli/Projects-C/tree/main/libft',
+    github: 'https://github.com/Fazejli/cUB3D_bonus',
     demo: '',
-    image: `${import.meta.env.BASE_URL}demo/libft_demo.jpg`,
+    image: '',
     images: []
   },
-  {
-    id: 'ft-printf',
-    title: 'ft_printf',
-    subtitle: 'Réimplémentation de printf',
+    {
+    id: 'cpp-modules',
+    title: 'C++ Modules (00-04)',
+    subtitle: 'Introduction à la POO en C++',
     category: 'school',
-    technologies: ['C', 'Variadic Functions', 'Parsing'],
+    technologies: ['C++', 'OOP', 'Classes', 'Polymorphism'],
     features: [
-      'Reproduction fidèle de printf en C',
-      'Gestion des conversions: %c, %s, %p, %d, %i, %u, %x, %X, %%',
-      'Flags: -, 0, ., largeur minimale',
-      'Fonctions variadiques (va_list, va_start, va_arg)',
-      'Gestion rigoureuse de la mémoire',
-      'Code modulaire et maintenable'
+      'Module 00: Namespaces, classes, member functions',
+      'Module 01: Memory allocation, references, pointers',
+      'Module 02: Polymorphisme ad-hoc, surcharge d\'opérateurs',
+      'Module 03: Héritage et encapsulation',
+      'Module 04: Polymorphisme de sous-typage, classes abstraites',
+      'Orthodox Canonical Form pour toutes les classes'
     ],
-    github: 'https://github.com/Fazejli/Projects-C/tree/main/printf',
+    github: 'https://github.com/Fazejli/Projects-CPP',
     demo: '',
-    image: `${import.meta.env.BASE_URL}demo/printf_demo.png`,
+    image: `${import.meta.env.BASE_URL}demo/C++_demo.png`,
     images: []
   },
-  {
-    id: 'born2beroot',
-    title: '🌟 Born2beRoot + WordPress',
-    subtitle: 'Administration système Linux',
+    {
+    id: 'netpractice',
+    title: 'NetPractice',
+    subtitle: 'Configuration réseaux et adressage IP',
     category: 'school',
-    technologies: ['Debian', 'VirtualBox', 'WordPress', 'LAMP', 'SSH'],
+    technologies: ['Réseau', 'TCP/IP', 'Subnetting', 'Routing'],
     features: [
-      'Configuration complète d\'un serveur Debian',
-      'Installation stack LAMP (Linux, Apache, MySQL, PHP)',
-      'Déploiement WordPress avec configuration sécurisée',
-      'Configuration SSH, pare-feu (UFW), sudo',
-      'Politique de mots de passe forte',
-      'Script de monitoring système (wall, cron)'
+      'Calcul et configuration de sous-réseaux',
+      'Adressage IP et masques de sous-réseau',
+      'Configuration de tables de routage',
+      'Résolution de problèmes réseau pratiques',
+      'Comprendre NAT et passerelles',
+      '10 niveaux de difficulté croissante'
     ],
-    github: '',
+    github: 'https://github.com/Fazejli/NetPractice',
     demo: '',
-    image: `${import.meta.env.BASE_URL}demo/B2B_demo.png`,
+    image: `${import.meta.env.BASE_URL}netPractice.jpg`,
     images: []
   },
-  {
-    id: 'get-next-line',
-    title: 'Get Next Line',
-    subtitle: 'Lecture ligne par ligne',
-    category: 'school',
-    technologies: ['C', 'File I/O', 'Static Variables'],
-    features: [
-      'Fonction de lecture ligne par ligne depuis un fd',
-      'Gestion des buffers avec taille variable',
-      'Support de fichiers multiples simultanés',
-      'Utilisation de variables statiques',
-      'Optimisation mémoire',
-      'Compatible avec stdin et fichiers'
-    ],
-    github: 'https://github.com/Fazejli/Projects-C/tree/main/get_next_line',
-    demo: '',
-    image: `${import.meta.env.BASE_URL}demo/gnl_demo.jpg`,
-    images: []
-  },
-  {
-    id: 'pipex',
-    title: 'Pipex',
-    subtitle: 'Reproduction du pipe Unix',
-    category: 'school',
-    technologies: ['C', 'Unix', 'Processes', 'File Descriptors'],
-    features: [
-      'Simulation du comportement du pipe shell (|)',
-      'Gestion des processus fils (fork, execve)',
-      'Redirection des entrées/sorties',
-      'Gestion des commandes avec arguments',
-      'Protection contre les erreurs système',
-      'Bonus: gestion de here_doc et multiple pipes'
-    ],
-    github: 'https://github.com/Fazejli/Projects-C/tree/main/pipex',
-    demo: '',
-    image: `${import.meta.env.BASE_URL}demo/pipex_demo.png`,
-    images: []
-  },
-  {
-    id: 'push-swap',
-    title: '🌟 Push Swap',
-    subtitle: 'Algorithme de tri optimisé',
-    category: 'school',
-    technologies: ['C', 'Algorithmes', 'Structures de données'],
-    features: [
-      'Tri de nombres avec 2 piles et opérations limitées',
-      'Algorithme optimisé (< 700 ops pour 100 nombres)',
-      'Implémentation de quicksort adapté',
-      'Visualiseur graphique pour debug',
-      'Checker intégré pour validation',
-      'Gestion efficace de la complexité'
-    ],
-    github: 'https://github.com/Fazejli/Projects-C/tree/main/push_swap',
-    demo: '',
-    image: `${import.meta.env.BASE_URL}demo/push_swap_demo.png`,
-    images: []
-  },
-  {
-    id: 'philosophers',
-    title: 'Philosophers (Dining Problem)',
-    subtitle: 'Gestion de threads et synchronisation',
-    category: 'school',
-    technologies: ['C', 'Threads', 'Mutex', 'Synchronisation'],
-    features: [
-      'Simulation du problème des philosophes dinants',
-      'Gestion de multithreading avec pthread',
-      'Synchronisation par mutex pour éviter deadlocks',
-      'Protection des ressources partagées (fourchettes)',
-      'Monitoring temps réel de l\'état des philosophes',
-      'Optimisation pour éviter data races'
-    ],
-    github: 'https://github.com/Fazejli/Projects-C/tree/main/philosophers',
-    demo: '',
-    image: `${import.meta.env.BASE_URL}demo/philo_demo.jpg`,
-    images: []
-  },
-  {
-    id: 'fdf-portfolio',
-    title: 'Project FDF (Fil De fer)',
-    subtitle: 'Wireframe 3D en C',
-    category: 'school',
-    technologies: ['C', 'MiniLibX', 'Graphisme', 'Mathématiques'],
-    features: [
-      'Rendu 3D isométrique de cartes topographiques',
-      'Projection isométrique et parallèle',
-      'Rotation, zoom, translation en temps réel',
-      'Algorithme de tracé de lignes (Bresenham)',
-      'Gestion de la palette de couleurs (dégradés)',
-      'Parser de fichiers .fdf'
-    ],
-    github: 'https://github.com/Fazejli/Projects-C/tree/main/fdf',
-    demo: '',
-    image: `${import.meta.env.BASE_URL}demo/fdf_demo.jpg`,
-    images: []
-  },
-  {
+    {
     id: 'minishell',
     title: '🌟 Minishell',
     subtitle: 'Implémentation d\'un shell Unix',
@@ -286,61 +191,156 @@ export const projects = [
     image: `${import.meta.env.BASE_URL}demo/minishell_demo.jpg`,
     images: []
   },
-  {
-    id: 'netpractice',
-    title: 'NetPractice',
-    subtitle: 'Configuration réseaux et adressage IP',
+    {
+    id: 'philosophers',
+    title: 'Philosophers (Dining Problem)',
+    subtitle: 'Gestion de threads et synchronisation',
     category: 'school',
-    technologies: ['Réseau', 'TCP/IP', 'Subnetting', 'Routing'],
+    technologies: ['C', 'Threads', 'Mutex', 'Synchronisation'],
     features: [
-      'Calcul et configuration de sous-réseaux',
-      'Adressage IP et masques de sous-réseau',
-      'Configuration de tables de routage',
-      'Résolution de problèmes réseau pratiques',
-      'Comprendre NAT et passerelles',
-      '10 niveaux de difficulté croissante'
+      'Simulation du problème des philosophes dinants',
+      'Gestion de multithreading avec pthread',
+      'Synchronisation par mutex pour éviter deadlocks',
+      'Protection des ressources partagées (fourchettes)',
+      'Monitoring temps réel de l\'état des philosophes',
+      'Optimisation pour éviter data races'
     ],
-    github: 'https://github.com/Fazejli/NetPractice',
+    github: 'https://github.com/Fazejli/Projects-C/tree/main/philosophers',
     demo: '',
-    image: `${import.meta.env.BASE_URL}netPractice.jpg`,
+    image: `${import.meta.env.BASE_URL}demo/philo_demo.jpg`,
     images: []
   },
-  {
-    id: 'cub3d',
-    title: '🌟 Cub3D',
-    subtitle: 'Moteur de rendu 3D type Wolfenstein',
+    {
+    id: 'fdf-portfolio',
+    title: 'Project FDF (Fil De fer)',
+    subtitle: 'Wireframe 3D en C',
     category: 'school',
-    technologies: ['C', 'MiniLibX', 'Raycasting', '3D Graphics', 'Parsing'],
+    technologies: ['C', 'MiniLibX', 'Graphisme', 'Mathématiques'],
     features: [
-      'Rendu 3D en temps réel avec raycasting',
-      'Textures pour murs (Nord, Sud, Est, Ouest)',
-      'Sprites animés (ennemis, objets)',
-      'Minimap interactive en temps réel',
-      'Déplacement fluide (WASD) et rotation (flèches)',
-      'Parser de fichiers .cub avec validation'
+      'Rendu 3D isométrique de cartes topographiques',
+      'Projection isométrique et parallèle',
+      'Rotation, zoom, translation en temps réel',
+      'Algorithme de tracé de lignes (Bresenham)',
+      'Gestion de la palette de couleurs (dégradés)',
+      'Parser de fichiers .fdf'
     ],
-    github: 'https://github.com/Fazejli/Cub3D',
+    github: 'https://github.com/Fazejli/Projects-C/tree/main/fdf',
     demo: '',
-    image: '',
+    image: `${import.meta.env.BASE_URL}demo/fdf_demo.jpg`,
     images: []
   },
-  {
-    id: 'cpp-modules',
-    title: 'C++ Modules (00-04)',
-    subtitle: 'Introduction à la POO en C++',
+    {
+    id: 'push-swap',
+    title: '🌟 Push Swap',
+    subtitle: 'Algorithme de tri optimisé',
     category: 'school',
-    technologies: ['C++', 'OOP', 'Classes', 'Polymorphism'],
+    technologies: ['C', 'Algorithmes', 'Structures de données'],
     features: [
-      'Module 00: Namespaces, classes, member functions',
-      'Module 01: Memory allocation, references, pointers',
-      'Module 02: Polymorphisme ad-hoc, surcharge d\'opérateurs',
-      'Module 03: Héritage et encapsulation',
-      'Module 04: Polymorphisme de sous-typage, classes abstraites',
-      'Orthodox Canonical Form pour toutes les classes'
+      'Tri de nombres avec 2 piles et opérations limitées',
+      'Algorithme optimisé (< 700 ops pour 100 nombres)',
+      'Implémentation de quicksort adapté',
+      'Visualiseur graphique pour debug',
+      'Checker intégré pour validation',
+      'Gestion efficace de la complexité'
     ],
-    github: 'https://github.com/Fazejli/Projects-CPP',
+    github: 'https://github.com/Fazejli/Projects-C/tree/main/push_swap',
     demo: '',
-    image: `${import.meta.env.BASE_URL}demo/C++_demo.png`,
+    image: `${import.meta.env.BASE_URL}demo/push_swap_demo.png`,
+    images: []
+  },
+    {
+    id: 'pipex',
+    title: 'Pipex',
+    subtitle: 'Reproduction du pipe Unix',
+    category: 'school',
+    technologies: ['C', 'Unix', 'Processes', 'File Descriptors'],
+    features: [
+      'Simulation du comportement du pipe shell (|)',
+      'Gestion des processus fils (fork, execve)',
+      'Redirection des entrées/sorties',
+      'Gestion des commandes avec arguments',
+      'Protection contre les erreurs système',
+      'Bonus: gestion de here_doc et multiple pipes'
+    ],
+    github: 'https://github.com/Fazejli/Projects-C/tree/main/pipex',
+    demo: '',
+    image: `${import.meta.env.BASE_URL}demo/pipex_demo.png`,
+    images: []
+  },
+    {
+    id: 'get-next-line',
+    title: 'Get Next Line',
+    subtitle: 'Lecture ligne par ligne',
+    category: 'school',
+    technologies: ['C', 'File I/O', 'Static Variables'],
+    features: [
+      'Fonction de lecture ligne par ligne depuis un fd',
+      'Gestion des buffers avec taille variable',
+      'Support de fichiers multiples simultanés',
+      'Utilisation de variables statiques',
+      'Optimisation mémoire',
+      'Compatible avec stdin et fichiers'
+    ],
+    github: 'https://github.com/Fazejli/Projects-C/tree/main/get_next_line',
+    demo: '',
+    image: `${import.meta.env.BASE_URL}demo/gnl_demo.jpg`,
+    images: []
+  },
+    {
+    id: 'born2beroot',
+    title: '🌟 Born2beRoot + WordPress',
+    subtitle: 'Administration système Linux',
+    category: 'school',
+    technologies: ['Debian', 'VirtualBox', 'WordPress', 'LAMP', 'SSH'],
+    features: [
+      'Configuration complète d\'un serveur Debian',
+      'Installation stack LAMP (Linux, Apache, MySQL, PHP)',
+      'Déploiement WordPress avec configuration sécurisée',
+      'Configuration SSH, pare-feu (UFW), sudo',
+      'Politique de mots de passe forte',
+      'Script de monitoring système (wall, cron)'
+    ],
+    github: '',
+    demo: '',
+    image: `${import.meta.env.BASE_URL}demo/B2B_demo.png`,
+    images: []
+  },
+    {
+    id: 'ft-printf',
+    title: 'ft_printf',
+    subtitle: 'Réimplémentation de printf',
+    category: 'school',
+    technologies: ['C', 'Variadic Functions', 'Parsing'],
+    features: [
+      'Reproduction fidèle de printf en C',
+      'Gestion des conversions: %c, %s, %p, %d, %i, %u, %x, %X, %%',
+      'Flags: -, 0, ., largeur minimale',
+      'Fonctions variadiques (va_list, va_start, va_arg)',
+      'Gestion rigoureuse de la mémoire',
+      'Code modulaire et maintenable'
+    ],
+    github: 'https://github.com/Fazejli/Projects-C/tree/main/printf',
+    demo: '',
+    image: `${import.meta.env.BASE_URL}demo/printf_demo.png`,
+    images: []
+  },
+    {
+    id: 'libft',
+    title: 'Libft',
+    subtitle: 'Bibliothèque C personnalisée',
+    category: 'school',
+    technologies: ['C', 'Librairie', 'Makefile'],
+    features: [
+      'Réimplémentation de 40+ fonctions standard C',
+      'Fonctions de manipulation de strings',
+      'Fonctions de manipulation de mémoire',
+      'Gestion de listes chaînées',
+      'Makefile avec règles (all, clean, fclean, re)',
+      'Base pour tous les projets 42 suivants'
+    ],
+    github: 'https://github.com/Fazejli/Projects-C/tree/main/libft',
+    demo: '',
+    image: `${import.meta.env.BASE_URL}demo/libft_demo.jpg`,
     images: []
   },
 ]
