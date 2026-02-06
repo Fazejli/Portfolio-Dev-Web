@@ -1,8 +1,10 @@
 export const projects = [
+  // ========== PROJETS FREELANCE ==========
   {
     id: 'vitrine-magasin',
     title: 'Site Vitrine Commerce',
     subtitle: 'Site moderne pour entreprise de textile',
+    category: 'freelance',
     technologies: ['React', 'Tailwind', 'Vite', 'GitHub Pages'],
     features: [
       'Design épuré et responsive',
@@ -20,6 +22,7 @@ export const projects = [
     id: 'rapport-notes-auto',
     title: 'Générateur de Rapports de Notes',
     subtitle: 'Automatisation Python pour génération PDF',
+    category: 'freelance',
     technologies: ['Python', 'Pandas', 'FPDF', 'Excel'],
     features: [
       'Lecture automatique depuis fichier Excel',
@@ -37,6 +40,7 @@ export const projects = [
     id: 'csv-merger',
     title: 'CSV Data Merger',
     subtitle: 'Script d\'agrégation de données clients',
+    category: 'freelance',
     technologies: ['Python', 'CSV', 'File Processing'],
     features: [
       'Parsing de multiples fichiers .txt',
@@ -54,11 +58,12 @@ export const projects = [
       id: 'email-signature-automation',
       title: 'Signatures Email Automatisées',
       subtitle: 'Mise en place de signatures professionnelles centralisées',
+      category: 'freelance',
       technologies: ['HTML', 'CSS', 'Microsoft 365', 'Google Workspace', 'Google Directory', 'CodeTwo'],
       features: [
         'Création de modèles HTML/CSS conformes à la charte graphique',
-        'Automatisation des informations utilisateurs depuis l’annuaire',
-        'Déploiement centralisé pour l’ensemble des collaborateurs',
+        'Automatisation des informations utilisateurs depuis l\'annuaire',
+        'Déploiement centralisé pour l\'ensemble des collaborateurs',
         'Compatibilité multi-clients mail (Outlook, Gmail, etc.)',
         'Mises à jour globales simples et rapides',
         'Test et validation du rendu sur différents appareils et résolutions'
@@ -67,10 +72,13 @@ export const projects = [
       demo: `${import.meta.env.BASE_URL}signature.jpg`,
       image: '',
   },
+
+  // ========== PROJETS ÉCOLE 42 ==========
   {
     id: 'libft',
     title: 'Libft',
     subtitle: 'Bibliothèque C personnalisée (42 🎓)',
+    category: 'school',
     technologies: ['C', 'Librairie', 'Makefile'],
     features: [
       'Réimplémentation de 40+ fonctions standard C',
@@ -88,6 +96,7 @@ export const projects = [
     id: 'born2beroot',
     title: '🌟 Born2beRoot + WordPress',
     subtitle: 'Administration système Linux (42 🎓)',
+    category: 'school',
     technologies: ['Debian', 'VirtualBox', 'WordPress', 'LAMP', 'SSH'],
     features: [
       'Configuration complète d\'un serveur Debian',
@@ -105,6 +114,7 @@ export const projects = [
     id: 'ft-printf',
     title: 'ft_printf',
     subtitle: 'Réimplémentation de printf (42 🎓)',
+    category: 'school',
     technologies: ['C', 'Variadic Functions', 'Parsing'],
     features: [
       'Reproduction fidèle de printf en C',
@@ -122,6 +132,7 @@ export const projects = [
     id: 'get-next-line',
     title: 'Get Next Line',
     subtitle: 'Lecture ligne par ligne (42 🎓)',
+    category: 'school',
     technologies: ['C', 'File I/O', 'Static Variables'],
     features: [
       'Fonction de lecture ligne par ligne depuis un fd',
@@ -139,6 +150,7 @@ export const projects = [
     id: 'pipex',
     title: 'Pipex',
     subtitle: 'Reproduction du pipe Unix (42 🎓)',
+    category: 'school',
     technologies: ['C', 'Unix', 'Processes', 'File Descriptors'],
     features: [
       'Simulation du comportement du pipe shell (|)',
@@ -156,6 +168,7 @@ export const projects = [
     id: 'push-swap',
     title: '🌟 Push Swap',
     subtitle: 'Algorithme de tri optimisé (42 🎓)',
+    category: 'school',
     technologies: ['C', 'Algorithmes', 'Structures de données'],
     features: [
       'Tri de nombres avec 2 piles et opérations limitées',
@@ -173,6 +186,7 @@ export const projects = [
     id: 'philosophers',
     title: 'Philosophers (Dining Problem)',
     subtitle: 'Gestion de threads et synchronisation (42 🎓)',
+    category: 'school',
     technologies: ['C', 'Threads', 'Mutex', 'Synchronisation'],
     features: [
       'Simulation du problème des philosophes dinants',
@@ -190,6 +204,7 @@ export const projects = [
     id: 'fdf-portfolio',
     title: 'Project FDF (Fil De fer)',
     subtitle: 'Wireframe 3D en C (42 🎓)',
+    category: 'school',
     technologies: ['C', 'MiniLibX', 'Graphisme', 'Mathématiques'],
     features: [
       'Rendu 3D isométrique de cartes topographiques',
@@ -207,6 +222,7 @@ export const projects = [
     id: 'minishell',
     title: '🌟 Minishell',
     subtitle: 'Implémentation d\'un shell Unix (42 🎓)',
+    category: 'school',
     technologies: ['C', 'Unix', 'Bash', 'Parsing', 'Processes'],
     features: [
       'Interpréteur de commandes avec prompt interactif',
@@ -229,6 +245,7 @@ export const projects = [
     id: 'netpractice',
     title: 'NetPractice',
     subtitle: 'Configuration réseaux et adressage IP (42 🎓)',
+    category: 'school',
     technologies: ['Réseau', 'TCP/IP', 'Subnetting', 'Routing'],
     features: [
       'Calcul et configuration de sous-réseaux',
@@ -246,6 +263,7 @@ export const projects = [
     id: 'cub3d',
     title: '🌟 Cub3D',
     subtitle: 'Moteur de rendu 3D type Wolfenstein (42 🎓)',
+    category: 'school',
     technologies: ['C', 'MiniLibX', 'Raycasting', '3D Graphics', 'Parsing'],
     features: [
       'Rendu 3D en temps réel avec raycasting',
@@ -263,6 +281,7 @@ export const projects = [
     id: 'cpp-modules',
     title: 'C++ Modules (00-04)',
     subtitle: 'Introduction à la POO en C++ (42 🎓)',
+    category: 'school',
     technologies: ['C++', 'OOP', 'Classes', 'Polymorphism'],
     features: [
       'Module 00: Namespaces, classes, member functions',
@@ -280,6 +299,7 @@ export const projects = [
     id: 'cpp-modules-advanced',
     title: 'C++ Modules (05-09)',
     subtitle: 'Concepts avancés C++ (42 🎓)',
+    category: 'school',
     technologies: ['C++', 'Templates', 'STL', 'Exceptions', 'Iterators'],
     features: [
       'Module 05-06: Exceptions, try/catch, gestion d\'erreurs',
