@@ -1,0 +1,173 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700">
+  <defs>
+    <style>
+      .card { fill: white; stroke: #E5E7EB; stroke-width: 2; }
+      .title-text { fill: #1F2937; font-family: 'Courier New', monospace; font-size: 20px; font-weight: bold; }
+      .code-text { fill: #1F2937; font-family: 'Courier New', monospace; font-size: 12px; }
+      .header-bg { fill: #F3F4F6; }
+      .line-number { fill: #9CA3AF; font-family: 'Courier New', monospace; font-size: 11px; }
+    </style>
+  </defs>
+  
+  <!-- Main Title -->
+  <text x="500" y="40" style="fill: #1F2937; font-size: 28px; font-weight: bold; text-anchor: middle; font-family: Arial;">Consolidation de Données Multi-Sources</text>
+  
+  <!-- BEFORE Section -->
+  <text x="250" y="90" style="fill: #DC2626; font-size: 22px; font-weight: bold; text-anchor: middle; font-family: Arial;">❌ AVANT : Fichiers dispersés</text>
+  
+  <!-- File 1 -->
+  <g>
+    <rect x="50" y="110" width="400" height="160" class="card" rx="8" filter="drop-shadow(0 2px 4px rgba(0,0,0,0.1))"/>
+    <rect x="50" y="110" width="400" height="30" class="header-bg" rx="8 8 0 0"/>
+    <text x="70" y="130" style="fill: #6B7280; font-size: 13px; font-weight: bold; font-family: Arial;">📄 clients_1.txt</text>
+    <text x="420" y="130" style="fill: #9CA3AF; font-size: 11px; text-anchor: end; font-family: Arial;">Format CSV</text>
+    
+    <text x="60" y="160" class="line-number">1</text>
+    <text x="80" y="160" class="code-text">Jean Dupont,jean.dupont@email.com</text>
+    
+    <text x="60" y="180" class="line-number">2</text>
+    <text x="80" y="180" class="code-text">Marie Martin,marie.m@mail.fr</text>
+    
+    <text x="60" y="200" class="line-number">3</text>
+    <text x="80" y="200" class="code-text">Pierre Bernard,p.bernard@outlook.com</text>
+    
+    <text x="60" y="220" class="line-number">4</text>
+    <text x="80" y="220" class="code-text">Sophie Petit,sophie.petit@gmail.com</text>
+    
+    <text x="60" y="250" style="fill: #9CA3AF; font-size: 11px; font-style: italic; font-family: Arial;">... 23 autres clients</text>
+  </g>
+  
+  <!-- File 2 -->
+  <g>
+    <rect x="50" y="290" width="400" height="160" class="card" rx="8" filter="drop-shadow(0 2px 4px rgba(0,0,0,0.1))"/>
+    <rect x="50" y="290" width="400" height="30" class="header-bg" rx="8 8 0 0"/>
+    <text x="70" y="310" style="fill: #6B7280; font-size: 13px; font-weight: bold; font-family: Arial;">📄 contacts_export.txt</text>
+    <text x="420" y="310" style="fill: #9CA3AF; font-size: 11px; text-anchor: end; font-family: Arial;">Format TSV (Tab)</text>
+    
+    <text x="60" y="340" class="line-number">1</text>
+    <text x="80" y="340" class="code-text">Luc Moreau    luc.moreau@test.fr</text>
+    
+    <text x="60" y="360" class="line-number">2</text>
+    <text x="80" y="360" class="code-text">Alice Roux    alice.roux@company.com</text>
+    
+    <text x="60" y="380" class="line-number">3</text>
+    <text x="80" y="380" class="code-text"></text>
+    
+    <text x="60" y="400" class="line-number">4</text>
+    <text x="80" y="400" class="code-text">Paul Simon    paul.s@email.fr</text>
+    
+    <text x="60" y="430" style="fill: #9CA3AF; font-size: 11px; font-style: italic; font-family: Arial;">... 15 autres contacts</text>
+  </g>
+  
+  <!-- File 3 -->
+  <g>
+    <rect x="50" y="470" width="400" height="160" class="card" rx="8" filter="drop-shadow(0 2px 4px rgba(0,0,0,0.1))"/>
+    <rect x="50" y="470" width="400" height="30" class="header-bg" rx="8 8 0 0"/>
+    <text x="70" y="490" style="fill: #6B7280; font-size: 13px; font-weight: bold; font-family: Arial;">📄 nouveaux_clients.txt</text>
+    <text x="420" y="490" style="fill: #9CA3AF; font-size: 11px; text-anchor: end; font-family: Arial;">Format mixte</text>
+    
+    <text x="60" y="520" class="line-number">1</text>
+    <text x="80" y="520" class="code-text">Emma Laurent,emma@startup.io</text>
+    
+    <text x="60" y="540" class="line-number">2</text>
+    <text x="80" y="540" class="code-text">Thomas Blanc    thomas.blanc@corp.com</text>
+    
+    <text x="60" y="560" class="line-number">3</text>
+    <text x="80" y="560" class="code-text">   Claire Durand,claire.d@mail.com   </text>
+    
+    <text x="60" y="580" class="line-number">4</text>
+    <text x="80" y="580" class="code-text">Hugo Martin</text>
+    
+    <text x="60" y="610" style="fill: #9CA3AF; font-size: 11px; font-style: italic; font-family: Arial;">... 8 autres entrées</text>
+  </g>
+  
+  <!-- Problems annotations -->
+  <g>
+    <rect x="470" y="150" width="30" height="30" fill="#FEE2E2" stroke="#DC2626" stroke-width="2" rx="15"/>
+    <text x="485" y="170" style="fill: #DC2626; font-size: 18px; text-anchor: middle;">⚠️</text>
+    <text x="510" y="168" style="fill: #991B1B; font-size: 11px; font-family: Arial;">Formats différents</text>
+    
+    <rect x="470" y="360" width="30" height="30" fill="#FEE2E2" stroke="#DC2626" stroke-width="2" rx="15"/>
+    <text x="485" y="380" style="fill: #DC2626; font-size: 18px; text-anchor: middle;">⚠️</text>
+    <text x="510" y="378" style="fill: #991B1B; font-size: 11px; font-family: Arial;">Ligne vide</text>
+    
+    <rect x="470" y="550" width="30" height="30" fill="#FEE2E2" stroke="#DC2626" stroke-width="2" rx="15"/>
+    <text x="485" y="570" style="fill: #DC2626; font-size: 18px; text-anchor: middle;">⚠️</text>
+    <text x="510" y="568" style="fill: #991B1B; font-size: 11px; font-family: Arial;">Espaces parasites</text>
+  </g>
+  
+  <!-- Arrow -->
+  <g>
+    <path d="M 480 340 L 520 340" stroke="#6B7280" stroke-width="4" marker-end="url(#arrow)"/>
+    <text x="500" y="330" style="fill: #4F46E5; font-size: 16px; font-weight: bold; text-anchor: middle; font-family: Arial;">FUSION</text>
+  </g>
+  
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#6B7280"/>
+    </marker>
+  </defs>
+  
+  <!-- AFTER Section -->
+  <text x="750" y="90" style="fill: #059669; font-size: 22px; font-weight: bold; text-anchor: middle; font-family: Arial;">✅ APRÈS : Fichier unifié</text>
+  
+  <!-- Unified Output -->
+  <g>
+    <rect x="550" y="110" width="400" height="520" class="card" rx="8" filter="drop-shadow(0 4px 8px rgba(0,0,0,0.15))"/>
+    <rect x="550" y="110" width="400" height="35" fill="#10B981" rx="8 8 0 0"/>
+    <text x="570" y="135" style="fill: white; font-size: 15px; font-weight: bold; font-family: Arial;">📊 clients.csv</text>
+    <text x="920" y="135" style="fill: #D1FAE5; font-size: 12px; text-anchor: end; font-family: Arial;">UTF-8 | Standardisé</text>
+    
+    <!-- Header row -->
+    <rect x="550" y="145" width="400" height="25" fill="#F0FDF4"/>
+    <text x="560" y="162" style="fill: #065F46; font-size: 13px; font-weight: bold; font-family: 'Courier New', monospace;">Name,Email</text>
+    
+    <!-- Data rows -->
+    <text x="560" y="190" class="line-number">1</text>
+    <text x="580" y="190" class="code-text">Jean Dupont,jean.dupont@email.com</text>
+    
+    <text x="560" y="210" class="line-number">2</text>
+    <text x="580" y="210" class="code-text">Marie Martin,marie.m@mail.fr</text>
+    
+    <text x="560" y="230" class="line-number">3</text>
+    <text x="580" y="230" class="code-text">Pierre Bernard,p.bernard@outlook.com</text>
+    
+    <text x="560" y="250" class="line-number">4</text>
+    <text x="580" y="250" class="code-text">Sophie Petit,sophie.petit@gmail.com</text>
+    
+    <line x1="560" y1="260" x2="940" y2="260" stroke="#D1D5DB" stroke-width="1" stroke-dasharray="3,3"/>
+    
+    <text x="560" y="280" class="line-number">23</text>
+    <text x="580" y="280" class="code-text">Luc Moreau,luc.moreau@test.fr</text>
+    
+    <text x="560" y="300" class="line-number">24</text>
+    <text x="580" y="300" class="code-text">Alice Roux,alice.roux@company.com</text>
+    
+    <text x="560" y="320" class="line-number">25</text>
+    <text x="580" y="320" class="code-text">Paul Simon,paul.s@email.fr</text>
+    
+    <line x1="560" y1="330" x2="940" y2="330" stroke="#D1D5DB" stroke-width="1" stroke-dasharray="3,3"/>
+    
+    <text x="560" y="350" class="line-number">38</text>
+    <text x="580" y="350" class="code-text">Emma Laurent,emma@startup.io</text>
+    
+    <text x="560" y="370" class="line-number">39</text>
+    <text x="580" y="370" class="code-text">Thomas Blanc,thomas.blanc@corp.com</text>
+    
+    <text x="560" y="390" class="line-number">40</text>
+    <text x="580" y="390" class="code-text">Claire Durand,claire.d@mail.com</text>
+    
+    <line x1="560" y1="400" x2="940" y2="400" stroke="#D1D5DB" stroke-width="1" stroke-dasharray="3,3"/>
+    
+    <text x="560" y="430" style="fill: #059669; font-size: 12px; font-weight: bold; font-family: Arial;">✓ 46 clients consolidés</text>
+    <text x="560" y="450" style="fill: #065F46; font-size: 11px; font-family: Arial;">• Format standardisé (CSV)</text>
+    <text x="560" y="468" style="fill: #065F46; font-size: 11px; font-family: Arial;">• Encodage UTF-8</text>
+    <text x="560" y="486" style="fill: #065F46; font-size: 11px; font-family: Arial;">• Espaces nettoyés</text>
+    <text x="560" y="504" style="fill: #065F46; font-size: 11px; font-family: Arial;">• Lignes vides supprimées</text>
+    <text x="560" y="522" style="fill: #065F46; font-size: 11px; font-family: Arial;">• Données valides uniquement</text>
+    
+    <!-- Success badges -->
+    <circle cx="920" cy="575" r="35" fill="#10B981" opacity="0.2"/>
+    <text x="920" y="585" style="fill: #065F46; font-size: 24px; text-anchor: middle;">✓</text>
+  </g>
+</svg>

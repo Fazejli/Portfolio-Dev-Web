@@ -14,9 +14,10 @@ export const projects = [
       'Animations fluides avec transitions CSS',
       'Déploiement automatisé via GitHub Pages'
     ],
-    github: 'https://github.com/Fazejli/vti-website.git',
+    github: '',
     demo: 'https://fazejli.github.io/vti-website/',
     image: '',
+    images: []
   },
   {
     id: 'rapport-notes-auto',
@@ -32,9 +33,26 @@ export const projects = [
       'Traitement batch de plusieurs étudiants',
       'Structure de dossiers automatique'
     ],
-    github: 'https://github.com/Fazejli/Freelance/tree/main/rapport_generator',
+    github: '',
     demo: '',
-    image: '',
+    image: `${import.meta.env.BASE_URL}demo/rapport-generator-flow.svg`,
+    images: [
+      {
+        src: `${import.meta.env.BASE_URL}demo/rapport-generator-flow.svg`,
+        title: 'Flux Automatisé',
+        description: 'Pipeline de traitement automatique des notes'
+      },
+      {
+        src: `${import.meta.env.BASE_URL}demo/rapport-pdf-mockup.svg`,
+        title: 'Exemple de Rapport PDF',
+        description: 'Aperçu d\'un rapport généré avec notes et commentaires'
+      },
+      {
+        src: `${import.meta.env.BASE_URL}demo/rapport-impact-infographic.svg`,
+        title: 'Impact & Performances',
+        description: 'Gain de temps et efficacité mesurés'
+      }
+    ]
   },
   {
     id: 'csv-merger',
@@ -50,9 +68,26 @@ export const projects = [
       'Gestion des encodages (UTF-8)',
       'Traitement robuste des erreurs'
     ],
-    github: 'https://github.com/Fazejli/Freelance/tree/main/csv-merger',
+    github: '',
     demo: '',
-    image: '',
+    image: `${import.meta.env.BASE_URL}demo/csv-merger-flow.svg`,
+    images: [
+      {
+        src: `${import.meta.env.BASE_URL}demo/csv-merger-flow.svg`,
+        title: 'Pipeline de Traitement',
+        description: 'Architecture du système de fusion de données'
+      },
+      {
+        src: `${import.meta.env.BASE_URL}demo/csv-merger-before-after.svg`,
+        title: 'Avant / Après',
+        description: 'Transformation des données dispersées en fichier unifié'
+      },
+      {
+        src: `${import.meta.env.BASE_URL}demo/csv-merger-impact.svg`,
+        title: 'Cas d\'Usage & Impact',
+        description: 'Applications réelles et métriques de performance'
+      }
+    ]
   },
   {
       id: 'email-signature-automation',
@@ -69,8 +104,9 @@ export const projects = [
         'Test et validation du rendu sur différents appareils et résolutions'
       ],
       github: '',
-      demo: `${import.meta.env.BASE_URL}signature.jpg`,
+      demo: `${import.meta.env.BASE_URL}demo/signature.jpg`,
       image: '',
+      images: []
   },
 
   // ========== PROJETS ÉCOLE 42 ==========
@@ -91,6 +127,7 @@ export const projects = [
     github: 'https://github.com/Fazejli/Projects-C/tree/main/libft',
     demo: '',
     image: '',
+    images: []
   },
   {
     id: 'born2beroot',
@@ -109,6 +146,7 @@ export const projects = [
     github: '',
     demo: '',
     image: '',
+    images: []
   },
   {
     id: 'ft-printf',
@@ -127,6 +165,7 @@ export const projects = [
     github: 'https://github.com/Fazejli/Projects-C/tree/main/printf',
     demo: '',
     image: '',
+    images: []
   },
   {
     id: 'get-next-line',
@@ -145,6 +184,7 @@ export const projects = [
     github: 'https://github.com/Fazejli/Projects-C/tree/main/get_next_line',
     demo: '',
     image: '',
+    images: []
   },
   {
     id: 'pipex',
@@ -163,6 +203,7 @@ export const projects = [
     github: 'https://github.com/Fazejli/Projects-C/tree/main/pipex',
     demo: '',
     image: '',
+    images: []
   },
   {
     id: 'push-swap',
@@ -181,6 +222,7 @@ export const projects = [
     github: 'https://github.com/Fazejli/Projects-C/tree/main/push_swap',
     demo: '',
     image: '',
+    images: []
   },
   {
     id: 'philosophers',
@@ -199,6 +241,7 @@ export const projects = [
     github: 'https://github.com/Fazejli/Projects-C/tree/main/philosophers',
     demo: '',
     image: '',
+    images: []
   },
   {
     id: 'fdf-portfolio',
@@ -217,6 +260,7 @@ export const projects = [
     github: 'https://github.com/Fazejli/Projects-C/tree/main/fdf',
     demo: '',
     image: '',
+    images: []
   },
   {
     id: 'minishell',
@@ -240,6 +284,7 @@ export const projects = [
     github: 'https://github.com/Fazejli/Projects-C/tree/main/minishell',
     demo: `${import.meta.env.BASE_URL}minishell.png`,
     image: '',
+    images: []
   },
   {
     id: 'netpractice',
@@ -258,6 +303,7 @@ export const projects = [
     github: 'https://github.com/Fazejli/NetPractice',
     demo: `${import.meta.env.BASE_URL}netPractice.jpg`,
     image: '',
+    images: []
   },
   {
     id: 'cub3d',
@@ -276,6 +322,7 @@ export const projects = [
     github: 'https://github.com/Fazejli/Cub3D',
     demo: '',
     image: '',
+    images: []
   },
   {
     id: 'cpp-modules',
@@ -294,23 +341,6 @@ export const projects = [
     github: 'https://github.com/Fazejli/Projects-CPP',
     demo: '',
     image: '',
-  },
-  {
-    id: 'cpp-modules-advanced',
-    title: 'C++ Modules (05-09)',
-    subtitle: 'Concepts avancés C++ (42 🎓)',
-    category: 'school',
-    technologies: ['C++', 'Templates', 'STL', 'Exceptions', 'Iterators'],
-    features: [
-      'Module 05-06: Exceptions, try/catch, gestion d\'erreurs',
-      'Module 07-08: Templates de fonctions et de classes',
-      'Module 08: Conteneurs STL (vector, list, map, stack)',
-      'Module 09: Algorithmes STL et itérateurs avancés',
-      'Design patterns (Factory, Strategy, Observer)',
-      'Code générique et réutilisable'
-    ],
-    github: '',
-    demo: '',
-    image: '',
+    images: []
   },
 ]
