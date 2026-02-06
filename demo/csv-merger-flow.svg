@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 650">
+  <defs>
+    <style>
+      .box { fill: #7C3AED; stroke: #5B21B6; stroke-width: 2; rx: 8; }
+      .input-box { fill: #EC4899; stroke: #9F1239; stroke-width: 2; rx: 8; }
+      .process-box { fill: #3B82F6; stroke: #1E40AF; stroke-width: 2; rx: 8; }
+      .output-box { fill: #10B981; stroke: #065F46; stroke-width: 2; rx: 8; }
+      .text { fill: white; font-family: Arial, sans-serif; font-size: 14px; font-weight: bold; text-anchor: middle; }
+      .small-text { fill: white; font-family: Arial, sans-serif; font-size: 11px; text-anchor: middle; }
+      .arrow { stroke: #6B7280; stroke-width: 3; fill: none; marker-end: url(#arrowhead); }
+      .title { fill: #1F2937; font-family: Arial, sans-serif; font-size: 26px; font-weight: bold; text-anchor: middle; }
+      .file-icon { fill: #9CA3AF; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#6B7280" />
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="450" y="40" class="title">Pipeline de Fusion de Données Clients</text>
+  
+  <!-- Multiple Input Files -->
+  <g>
+    <!-- File 1 -->
+    <rect x="100" y="90" width="140" height="60" class="input-box"/>
+    <text x="170" y="115" class="text">📄 clients_1.txt</text>
+    <text x="170" y="135" class="small-text">Format CSV (,)</text>
+    
+    <!-- File 2 -->
+    <rect x="260" y="90" width="140" height="60" class="input-box"/>
+    <text x="330" y="115" class="text">📄 clients_2.txt</text>
+    <text x="330" y="135" class="small-text">Format TSV (tab)</text>
+    
+    <!-- File 3 -->
+    <rect x="420" y="90" width="140" height="60" class="input-box"/>
+    <text x="490" y="115" class="text">📄 clients_3.txt</text>
+    <text x="490" y="135" class="small-text">Format mixte</text>
+    
+    <!-- More files indicator -->
+    <text x="600" y="120" style="fill: #9CA3AF; font-size: 24px; font-weight: bold;">...</text>
+    <text x="670" y="115" style="fill: #6B7280; font-size: 12px;">N fichiers</text>
+    <text x="670" y="133" style="fill: #6B7280; font-size: 11px;">dans /data/</text>
+  </g>
+  
+  <!-- Arrows to collection -->
+  <path d="M 170 150 L 170 200 L 350 200" class="arrow"/>
+  <path d="M 330 150 L 330 200 L 350 200" class="arrow"/>
+  <path d="M 490 150 L 490 200 L 350 200" class="arrow"/>
+  
+  <!-- Step 1: Collection -->
+  <rect x="250" y="200" width="200" height="70" class="box"/>
+  <text x="350" y="225" class="text">📂 Scan du répertoire</text>
+  <text x="350" y="245" class="small-text">Détection *.txt</text>
+  <text x="350" y="260" class="small-text">os.listdir(data_dir)</text>
+  
+  <!-- Arrow -->
+  <path d="M 350 270 L 350 320" class="arrow"/>
+  
+  <!-- Step 2: Parsing -->
+  <rect x="250" y="320" width="200" height="70" class="process-box"/>
+  <text x="350" y="345" class="text">🔍 Parsing intelligent</text>
+  <text x="350" y="365" class="small-text">Détection délimiteur (, ou \t)</text>
+  
+  <!-- Arrow -->
+  <path d="M 350 390 L 350 440" class="arrow"/>
+  
+  <!-- Step 3: Validation -->
+  <rect x="250" y="440" width="200" height="70" class="process-box"/>
+  <text x="350" y="465" class="text">✓ Validation</text>
+  <text x="350" y="485" class="small-text">Vérification format (Nom, Email)</text>
+  <text x="350" y="500" class="small-text">Nettoyage espaces</text>
+  
+  <!-- Arrow -->
+  <path d="M 350 510 L 350 560" class="arrow"/>
+  
+  <!-- Step 4: Aggregation -->
+  <rect x="250" y="560" width="200" height="50" class="output-box"/>
+  <text x="350" y="585" class="text">📊 clients.csv</text>
+  <text x="350" y="600" class="small-text">Format standardisé</text>
+  
+  <!-- Side info - Features -->
+  <g>
+    <rect x="550" y="280" width="300" height="280" fill="#F9FAFB" stroke="#D1D5DB" stroke-width="2" rx="12"/>
+    <text x="700" y="310" style="fill: #1F2937; font-size: 16px; font-weight: bold; text-anchor: middle;">🛠️ Fonctionnalités</text>
+    
+    <g transform="translate(570, 330)">
+      <circle cx="0" cy="0" r="4" fill="#10B981"/>
+      <text x="15" y="5" style="fill: #374151; font-size: 13px;">Support multi-formats (CSV, TSV)</text>
+    </g>
+    
+    <g transform="translate(570, 360)">
+      <circle cx="0" cy="0" r="4" fill="#10B981"/>
+      <text x="15" y="5" style="fill: #374151; font-size: 13px;">Détection automatique délimiteur</text>
+    </g>
+    
+    <g transform="translate(570, 390)">
+      <circle cx="0" cy="0" r="4" fill="#10B981"/>
+      <text x="15" y="5" style="fill: #374151; font-size: 13px;">Validation structure de données</text>
+    </g>
+    
+    <g transform="translate(570, 420)">
+      <circle cx="0" cy="0" r="4" fill="#10B981"/>
+      <text x="15" y="5" style="fill: #374151; font-size: 13px;">Nettoyage automatique</text>
+    </g>
+    
+    <g transform="translate(570, 450)">
+      <circle cx="0" cy="0" r="4" fill="#10B981"/>
+      <text x="15" y="5" style="fill: #374151; font-size: 13px;">Gestion encodage UTF-8</text>
+    </g>
+    
+    <g transform="translate(570, 480)">
+      <circle cx="0" cy="0" r="4" fill="#10B981"/>
+      <text x="15" y="5" style="fill: #374151; font-size: 13px;">Ignorer lignes invalides</text>
+    </g>
+    
+    <g transform="translate(570, 510)">
+      <circle cx="0" cy="0" r="4" fill="#10B981"/>
+      <text x="15" y="5" style="fill: #374151; font-size: 13px;">Export CSV standardisé</text>
+    </g>
+    
+    <rect x="10" y="150" width="210" height="100" fill="#FEF3C7" stroke="#F59E0B" stroke-width="2" rx="8"/>
+    <text x="115" y="175" style="fill: #92400E; font-size: 14px; font-weight: bold; text-anchor: middle;">⚠️ Gestion d'erreurs</text>
+    <text x="115" y="198" style="fill: #78350F; font-size: 11px; text-anchor: middle;">• Lignes vides ignorées</text>
+    <text x="115" y="216" style="fill: #78350F; font-size: 11px; text-anchor: middle;">• Format invalide rejeté</text>
+    <text x="115" y="234" style="fill: #78350F; font-size: 11px; text-anchor: middle;">• Encodage robuste</text>
+  </g>
+</svg>

@@ -1,0 +1,105 @@
+<svg viewBox="0 0 1000 700" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1000" height="700" fill="#0f172a"/>
+  
+  <!-- Title -->
+  <text x="500" y="50" font-size="32" font-weight="bold" fill="#e2e8f0" text-anchor="middle" font-family="Arial, sans-serif">
+    📊 Générateur de Rapports - Flux Automatisé
+  </text>
+  
+  <!-- Step 1: Excel Input -->
+  <g transform="translate(80, 130)">
+    <rect width="180" height="100" rx="15" fill="url(#grad1)" filter="url(#shadow)"/>
+    <text x="90" y="45" font-size="40" text-anchor="middle" fill="#fff">📑</text>
+    <text x="90" y="75" font-size="16" font-weight="bold" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif">Fichier Excel</text>
+    <text x="90" y="93" font-size="13" text-anchor="middle" fill="#e2e8f0" font-family="Arial, sans-serif">Notes étudiants</text>
+  </g>
+  
+  <!-- Arrow 1 -->
+  <g>
+    <defs>
+      <marker id="arrowhead1" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+        <polygon points="0 0, 10 3, 0 6" fill="#60a5fa" />
+      </marker>
+    </defs>
+    <path d="M 260 180 L 360 180" stroke="#60a5fa" stroke-width="3" fill="none" marker-end="url(#arrowhead1)"/>
+  </g>
+  
+  <!-- Step 2: Python Processing -->
+  <g transform="translate(360, 130)">
+    <rect width="180" height="100" rx="15" fill="url(#grad2)" filter="url(#shadow)"/>
+    <text x="90" y="45" font-size="40" text-anchor="middle" fill="#fff">⚙️</text>
+    <text x="90" y="75" font-size="16" font-weight="bold" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif">Traitement Python</text>
+    <text x="90" y="93" font-size="13" text-anchor="middle" fill="#e2e8f0" font-family="Arial, sans-serif">Pandas + FPDF</text>
+  </g>
+  
+  <!-- Arrow 2 -->
+  <path d="M 540 180 L 640 180" stroke="#60a5fa" stroke-width="3" fill="none" marker-end="url(#arrowhead1)"/>
+  
+  <!-- Step 3: PDF Output -->
+  <g transform="translate(640, 130)">
+    <rect width="180" height="100" rx="15" fill="url(#grad1)" filter="url(#shadow)"/>
+    <text x="90" y="45" font-size="40" text-anchor="middle" fill="#fff">📄</text>
+    <text x="90" y="75" font-size="16" font-weight="bold" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif">Rapports PDF</text>
+    <text x="90" y="93" font-size="13" text-anchor="middle" fill="#e2e8f0" font-family="Arial, sans-serif">Personnalisés</text>
+  </g>
+  
+  <!-- Features Box -->
+  <g transform="translate(80, 300)">
+    <rect width="740" height="320" rx="20" fill="#1e293b" stroke="#334155" stroke-width="2" filter="url(#shadow)"/>
+    
+    <text x="370" y="40" font-size="22" font-weight="bold" fill="#e2e8f0" text-anchor="middle" font-family="Arial, sans-serif">
+      ✨ Fonctionnalités Clés
+    </text>
+    
+    <!-- Feature 1 -->
+    <g transform="translate(40, 70)">
+      <circle cx="8" cy="8" r="6" fill="#10b981"/>
+      <text x="25" y="13" font-size="15" fill="#e2e8f0" font-family="Arial, sans-serif">Lecture automatique des données Excel</text>
+    </g>
+    
+    <!-- Feature 2 -->
+    <g transform="translate(40, 110)">
+      <circle cx="8" cy="8" r="6" fill="#10b981"/>
+      <text x="25" y="13" font-size="15" fill="#e2e8f0" font-family="Arial, sans-serif">Calcul automatique de moyennes et statistiques</text>
+    </g>
+    
+    <!-- Feature 3 -->
+    <g transform="translate(40, 150)">
+      <circle cx="8" cy="8" r="6" fill="#10b981"/>
+      <text x="25" y="13" font-size="15" fill="#e2e8f0" font-family="Arial, sans-serif">Génération de PDF personnalisés par étudiant</text>
+    </g>
+    
+    <!-- Feature 4 -->
+    <g transform="translate(40, 190)">
+      <circle cx="8" cy="8" r="6" fill="#10b981"/>
+      <text x="25" y="13" font-size="15" fill="#e2e8f0" font-family="Arial, sans-serif">Commentaires adaptatifs selon les résultats</text>
+    </g>
+    
+    <!-- Feature 5 -->
+    <g transform="translate(40, 230)">
+      <circle cx="8" cy="8" r="6" fill="#10b981"/>
+      <text x="25" y="13" font-size="15" fill="#e2e8f0" font-family="Arial, sans-serif">Traitement batch de multiples étudiants</text>
+    </g>
+    
+    <!-- Feature 6 -->
+    <g transform="translate(40, 270)">
+      <circle cx="8" cy="8" r="6" fill="#10b981"/>
+      <text x="25" y="13" font-size="15" fill="#e2e8f0" font-family="Arial, sans-serif">Organisation automatique des fichiers de sortie</text>
+    </g>
+  </g>
+</svg>
