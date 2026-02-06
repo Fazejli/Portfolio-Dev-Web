@@ -16,7 +16,7 @@ export const projects = [
     ],
     github: '',
     demo: 'https://fazejli.github.io/vti-website/',
-    image: '',
+    image: `${import.meta.env.BASE_URL}demo/VTI-demo.png`,
     images: []
   },
   {
@@ -84,7 +84,7 @@ export const projects = [
       },
       {
         src: `${import.meta.env.BASE_URL}demo/csv-merger-impact.svg`,
-        title: 'Cas d\'Usage & Impact',
+        title: 'Cas d\'usage & impact',
         description: 'Applications réelles et métriques de performance'
       }
     ]
@@ -113,7 +113,7 @@ export const projects = [
   {
     id: 'libft',
     title: 'Libft',
-    subtitle: 'Bibliothèque C personnalisée (42 🎓)',
+    subtitle: 'Bibliothèque C personnalisée',
     category: 'school',
     technologies: ['C', 'Librairie', 'Makefile'],
     features: [
@@ -126,32 +126,13 @@ export const projects = [
     ],
     github: 'https://github.com/Fazejli/Projects-C/tree/main/libft',
     demo: '',
-    image: '',
-    images: []
-  },
-  {
-    id: 'born2beroot',
-    title: '🌟 Born2beRoot + WordPress',
-    subtitle: 'Administration système Linux (42 🎓)',
-    category: 'school',
-    technologies: ['Debian', 'VirtualBox', 'WordPress', 'LAMP', 'SSH'],
-    features: [
-      'Configuration complète d\'un serveur Debian',
-      'Installation stack LAMP (Linux, Apache, MySQL, PHP)',
-      'Déploiement WordPress avec configuration sécurisée',
-      'Configuration SSH, pare-feu (UFW), sudo',
-      'Politique de mots de passe forte',
-      'Script de monitoring système (wall, cron)'
-    ],
-    github: '',
-    demo: '',
-    image: '',
+    image: `${import.meta.env.BASE_URL}demo/libft_demo.jpg`,
     images: []
   },
   {
     id: 'ft-printf',
     title: 'ft_printf',
-    subtitle: 'Réimplémentation de printf (42 🎓)',
+    subtitle: 'Réimplémentation de printf',
     category: 'school',
     technologies: ['C', 'Variadic Functions', 'Parsing'],
     features: [
@@ -164,13 +145,32 @@ export const projects = [
     ],
     github: 'https://github.com/Fazejli/Projects-C/tree/main/printf',
     demo: '',
-    image: '',
+    image: `${import.meta.env.BASE_URL}demo/printf_demo.png`,
+    images: []
+  },
+  {
+    id: 'born2beroot',
+    title: '🌟 Born2beRoot + WordPress',
+    subtitle: 'Administration système Linux',
+    category: 'school',
+    technologies: ['Debian', 'VirtualBox', 'WordPress', 'LAMP', 'SSH'],
+    features: [
+      'Configuration complète d\'un serveur Debian',
+      'Installation stack LAMP (Linux, Apache, MySQL, PHP)',
+      'Déploiement WordPress avec configuration sécurisée',
+      'Configuration SSH, pare-feu (UFW), sudo',
+      'Politique de mots de passe forte',
+      'Script de monitoring système (wall, cron)'
+    ],
+    github: '',
+    demo: '',
+    image: `${import.meta.env.BASE_URL}demo/B2B_demo.png`,
     images: []
   },
   {
     id: 'get-next-line',
     title: 'Get Next Line',
-    subtitle: 'Lecture ligne par ligne (42 🎓)',
+    subtitle: 'Lecture ligne par ligne',
     category: 'school',
     technologies: ['C', 'File I/O', 'Static Variables'],
     features: [
@@ -183,13 +183,13 @@ export const projects = [
     ],
     github: 'https://github.com/Fazejli/Projects-C/tree/main/get_next_line',
     demo: '',
-    image: '',
+    image: `${import.meta.env.BASE_URL}demo/gnl_demo.jpg`,
     images: []
   },
   {
     id: 'pipex',
     title: 'Pipex',
-    subtitle: 'Reproduction du pipe Unix (42 🎓)',
+    subtitle: 'Reproduction du pipe Unix',
     category: 'school',
     technologies: ['C', 'Unix', 'Processes', 'File Descriptors'],
     features: [
@@ -202,13 +202,13 @@ export const projects = [
     ],
     github: 'https://github.com/Fazejli/Projects-C/tree/main/pipex',
     demo: '',
-    image: '',
+    image: `${import.meta.env.BASE_URL}demo/pipex_demo.png`,
     images: []
   },
   {
     id: 'push-swap',
     title: '🌟 Push Swap',
-    subtitle: 'Algorithme de tri optimisé (42 🎓)',
+    subtitle: 'Algorithme de tri optimisé',
     category: 'school',
     technologies: ['C', 'Algorithmes', 'Structures de données'],
     features: [
@@ -221,13 +221,13 @@ export const projects = [
     ],
     github: 'https://github.com/Fazejli/Projects-C/tree/main/push_swap',
     demo: '',
-    image: '',
+    image: `${import.meta.env.BASE_URL}demo/push_swap_demo.png`,
     images: []
   },
   {
     id: 'philosophers',
     title: 'Philosophers (Dining Problem)',
-    subtitle: 'Gestion de threads et synchronisation (42 🎓)',
+    subtitle: 'Gestion de threads et synchronisation',
     category: 'school',
     technologies: ['C', 'Threads', 'Mutex', 'Synchronisation'],
     features: [
@@ -240,13 +240,13 @@ export const projects = [
     ],
     github: 'https://github.com/Fazejli/Projects-C/tree/main/philosophers',
     demo: '',
-    image: '',
+    image: `${import.meta.env.BASE_URL}demo/philo_demo.jpg`,
     images: []
   },
   {
     id: 'fdf-portfolio',
     title: 'Project FDF (Fil De fer)',
-    subtitle: 'Wireframe 3D en C (42 🎓)',
+    subtitle: 'Wireframe 3D en C',
     category: 'school',
     technologies: ['C', 'MiniLibX', 'Graphisme', 'Mathématiques'],
     features: [
@@ -259,13 +259,13 @@ export const projects = [
     ],
     github: 'https://github.com/Fazejli/Projects-C/tree/main/fdf',
     demo: '',
-    image: '',
+    image: `${import.meta.env.BASE_URL}demo/fdf_demo.jpg`,
     images: []
   },
   {
     id: 'minishell',
     title: '🌟 Minishell',
-    subtitle: 'Implémentation d\'un shell Unix (42 🎓)',
+    subtitle: 'Implémentation d\'un shell Unix',
     category: 'school',
     technologies: ['C', 'Unix', 'Bash', 'Parsing', 'Processes'],
     features: [
@@ -283,13 +283,13 @@ export const projects = [
     ],
     github: 'https://github.com/Fazejli/Projects-C/tree/main/minishell',
     demo: `${import.meta.env.BASE_URL}minishell.png`,
-    image: '',
+    image: `${import.meta.env.BASE_URL}demo/minishell_demo.jpg`,
     images: []
   },
   {
     id: 'netpractice',
     title: 'NetPractice',
-    subtitle: 'Configuration réseaux et adressage IP (42 🎓)',
+    subtitle: 'Configuration réseaux et adressage IP',
     category: 'school',
     technologies: ['Réseau', 'TCP/IP', 'Subnetting', 'Routing'],
     features: [
@@ -301,14 +301,14 @@ export const projects = [
       '10 niveaux de difficulté croissante'
     ],
     github: 'https://github.com/Fazejli/NetPractice',
-    demo: `${import.meta.env.BASE_URL}netPractice.jpg`,
-    image: '',
+    demo: '',
+    image: `${import.meta.env.BASE_URL}netPractice.jpg`,
     images: []
   },
   {
     id: 'cub3d',
     title: '🌟 Cub3D',
-    subtitle: 'Moteur de rendu 3D type Wolfenstein (42 🎓)',
+    subtitle: 'Moteur de rendu 3D type Wolfenstein',
     category: 'school',
     technologies: ['C', 'MiniLibX', 'Raycasting', '3D Graphics', 'Parsing'],
     features: [
@@ -327,7 +327,7 @@ export const projects = [
   {
     id: 'cpp-modules',
     title: 'C++ Modules (00-04)',
-    subtitle: 'Introduction à la POO en C++ (42 🎓)',
+    subtitle: 'Introduction à la POO en C++',
     category: 'school',
     technologies: ['C++', 'OOP', 'Classes', 'Polymorphism'],
     features: [
@@ -340,7 +340,7 @@ export const projects = [
     ],
     github: 'https://github.com/Fazejli/Projects-CPP',
     demo: '',
-    image: '',
+    image: `${import.meta.env.BASE_URL}demo/C++_demo.png`,
     images: []
   },
 ]
