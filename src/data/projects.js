@@ -51,6 +51,23 @@ export const projects = [
     image: '',
   },
   {
+      id: 'email-signature-automation',
+      title: 'Signatures Email Automatisées',
+      subtitle: 'Mise en place de signatures professionnelles centralisées',
+      technologies: ['HTML', 'CSS', 'Microsoft 365', 'Google Workspace', 'Google Directory', 'CodeTwo'],
+      features: [
+        'Création de modèles HTML/CSS conformes à la charte graphique',
+        'Automatisation des informations utilisateurs depuis l’annuaire',
+        'Déploiement centralisé pour l’ensemble des collaborateurs',
+        'Compatibilité multi-clients mail (Outlook, Gmail, etc.)',
+        'Mises à jour globales simples et rapides',
+        'Test et validation du rendu sur différents appareils et résolutions'
+      ],
+      github: '',
+      demo: `${import.meta.env.BASE_URL}signature.jpg`,
+      image: '',
+  },
+  {
     id: 'libft',
     title: 'Libft',
     subtitle: 'Bibliothèque C personnalisée (42 🎓)',
