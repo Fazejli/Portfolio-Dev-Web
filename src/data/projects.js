@@ -124,7 +124,7 @@ export const projects = [
       'Déplacement fluide (WASD) et rotation (flèches)',
       'Parser de fichiers .cub avec validation'
     ],
-    github: 'https://github.com/Fazejli/cUB3D_bonus',
+    github: 'https://github.com/Fazejli/Cub3D',
     demo: '',
     image: '',
     images: []
@@ -143,7 +143,7 @@ export const projects = [
       'Module 04: Polymorphisme de sous-typage, classes abstraites',
       'Orthodox Canonical Form pour toutes les classes'
     ],
-    github: 'https://github.com/Fazejli/Projects-CPP',
+    github: 'https://github.com/Fazejli/CPP',
     demo: '',
     image: `${import.meta.env.BASE_URL}demo/C++_demo.png`,
     images: []
@@ -186,7 +186,7 @@ export const projects = [
       'Support de sous-shells',
       'Amélioration de la gestion des erreurs'
     ],
-    github: 'https://github.com/Fazejli/Projects-C/tree/main/minishell',
+    github: 'https://github.com/dbouizem/minishell',
     demo: `${import.meta.env.BASE_URL}minishell.png`,
     image: `${import.meta.env.BASE_URL}demo/minishell_demo.jpg`,
     images: []
@@ -205,7 +205,7 @@ export const projects = [
       'Monitoring temps réel de l\'état des philosophes',
       'Optimisation pour éviter data races'
     ],
-    github: 'https://github.com/Fazejli/Projects-C/tree/main/philosophers',
+    github: 'https://github.com/Fazejli/Philosophers',
     demo: '',
     image: `${import.meta.env.BASE_URL}demo/philo_demo.jpg`,
     images: []
@@ -224,7 +224,7 @@ export const projects = [
       'Gestion de la palette de couleurs (dégradés)',
       'Parser de fichiers .fdf'
     ],
-    github: 'https://github.com/Fazejli/Projects-C/tree/main/fdf',
+    github: 'https://github.com/Fazejli/FDF',
     demo: '',
     image: `${import.meta.env.BASE_URL}demo/fdf_demo.jpg`,
     images: []
@@ -243,7 +243,7 @@ export const projects = [
       'Checker intégré pour validation',
       'Gestion efficace de la complexité'
     ],
-    github: 'https://github.com/Fazejli/Projects-C/tree/main/push_swap',
+    github: 'https://github.com/Fazejli/Push_swap',
     demo: '',
     image: `${import.meta.env.BASE_URL}demo/push_swap_demo.png`,
     images: []
@@ -262,7 +262,7 @@ export const projects = [
       'Protection contre les erreurs système',
       'Bonus: gestion de here_doc et multiple pipes'
     ],
-    github: 'https://github.com/Fazejli/Projects-C/tree/main/pipex',
+    github: 'https://github.com/Fazejli/pipex',
     demo: '',
     image: `${import.meta.env.BASE_URL}demo/pipex_demo.png`,
     images: []
@@ -281,7 +281,7 @@ export const projects = [
       'Optimisation mémoire',
       'Compatible avec stdin et fichiers'
     ],
-    github: 'https://github.com/Fazejli/Projects-C/tree/main/get_next_line',
+    github: 'https://github.com/Fazejli/get_next_line',
     demo: '',
     image: `${import.meta.env.BASE_URL}demo/gnl_demo.jpg`,
     images: []
@@ -300,7 +300,7 @@ export const projects = [
       'Politique de mots de passe forte',
       'Script de monitoring système (wall, cron)'
     ],
-    github: '',
+    github: 'https://github.com/Fazejli/born2beroot',
     demo: '',
     image: `${import.meta.env.BASE_URL}demo/B2B_demo.png`,
     images: []
@@ -319,7 +319,7 @@ export const projects = [
       'Gestion rigoureuse de la mémoire',
       'Code modulaire et maintenable'
     ],
-    github: 'https://github.com/Fazejli/Projects-C/tree/main/printf',
+    github: 'https://github.com/Fazejli/ft_printf',
     demo: '',
     image: `${import.meta.env.BASE_URL}demo/printf_demo.png`,
     images: []
@@ -338,7 +338,7 @@ export const projects = [
       'Makefile avec règles (all, clean, fclean, re)',
       'Base pour tous les projets 42 suivants'
     ],
-    github: 'https://github.com/Fazejli/Projects-C/tree/main/libft',
+    github: 'https://github.com/Fazejli/Libft',
     demo: '',
     image: `${import.meta.env.BASE_URL}demo/libft_demo.jpg`,
     images: []
