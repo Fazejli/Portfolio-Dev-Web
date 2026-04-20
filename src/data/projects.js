@@ -5,7 +5,7 @@ export const projects = [
     title: 'Site Vitrine Commerce',
     subtitle: 'Site moderne pour entreprise de textile',
     category: 'freelance',
-    technologies: ['React', 'Tailwind', 'Vite', 'GitHub Pages'],
+    technologies: ['React', 'Tailwind', 'Vite', 'deployment via GitHub Pages'],
     features: [
       'Design épuré et responsive',
       'Catalogue produits avec système de filtres',
@@ -17,6 +17,25 @@ export const projects = [
     github: '',
     demo: 'https://fazejli.github.io/vti-website/',
     image: `${import.meta.env.BASE_URL}demo/VTI-demo.png`,
+    images: []
+  },
+  {
+    id: 'zejli-paschal-wedding',
+    title: 'Zejli & Paschal Wedding',
+    subtitle: 'Site de mariage interactif permettant de partager les informations clés de l’événement et de gérer les confirmations de présence.',
+    category: 'freelance',
+    technologies: ['React', 'Vite', 'JavaScript', 'CSS', 'Vercel'],
+    features: [
+      'Présentation élégante du mariage avec storytelling',
+      'Informations pratiques (date, lieu, déroulé)',
+      'Interface responsive adaptée mobile et desktop',
+      'Animations et transitions fluides',
+      'Navigation simple et intuitive',
+      'Déploiement rapide et optimisé via Vercel'
+    ],
+    github: '',
+    demo: 'https://zejli-et-paschal.vercel.app/',
+    image: `${import.meta.env.BASE_URL}demo/wedding_website.jpg`,
     images: []
   },
   {
