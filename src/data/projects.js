@@ -21,7 +21,7 @@ export const projects = [
   },
   {
     id: 'zejli-paschal-wedding',
-    title: 'Zejli & Paschal Wedding',
+    title: 'Wedding Website',
     subtitle: 'Site de mariage interactif permettant de partager les informations clés de l’événement et de gérer les confirmations de présence.',
     category: 'freelance',
     technologies: ['React', 'Vite', 'JavaScript', 'CSS', 'Vercel'],
