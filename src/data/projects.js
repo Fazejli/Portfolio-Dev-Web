@@ -20,7 +20,7 @@ export const projects = [
     images: []
   },
   {
-    id: 'zejli-paschal-wedding',
+    id: 'wedding-website',
     title: 'Wedding Website',
     subtitle: 'Site de mariage interactif permettant de partager les informations clés de l’événement et de gérer les confirmations de présence.',
     category: 'freelance',
@@ -36,6 +36,25 @@ export const projects = [
     github: '',
     demo: 'https://zejli-et-paschal.vercel.app/',
     image: `${import.meta.env.BASE_URL}demo/wedding_website.jpg`,
+    images: []
+  },
+  {
+    id: 'dll-debug-imageboard',
+    title: 'Debugging DLL — ImageBoard',
+    subtitle: 'Résolution d\'un conflit de dépendances 32/64-bit sur Windows 10',
+    category: 'freelance',
+    technologies: ['Windows', 'CFF Explorer', 'DLL', 'C++ Runtime', 'Debugging'],
+    features: [
+      'Diagnostic de l\'erreur système 0xc000007b',
+      'Analyse des dépendances binaires avec CFF Explorer',
+      'Identification d\'un conflit d\'architecture 32-bit vs 64-bit',
+      'Remplacement ciblé des DLL Visual C++ 2010 (mfc100, MSVCR100, MSVCP100)',
+      'Résolution complète sans réinstallation du système',
+      'Logiciel de conception de motifs jacquard (industrie textile)'
+    ],
+    github: '',
+    demo: '',
+    image: '',
     images: []
   },
   {
