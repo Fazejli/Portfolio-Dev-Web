@@ -149,6 +149,27 @@ export const projects = [
 
   // ========== PROJETS ÉCOLE 42 ==========
     {
+    id: 'webserv',
+    title: '🌟 Webserv',
+    subtitle: 'Serveur HTTP/1.1 en C++98',
+    category: 'school',
+    technologies: ['C++', 'HTTP/1.1', 'Sockets', 'poll()', 'I/O non-bloquant'],
+    features: [
+      'Serveur HTTP/1.1 conforme à la RFC (GET, POST, DELETE)',
+      'Multiplexage I/O non-bloquant avec poll()',
+      'Gestion simultanée de multiples connexions clients',
+      'Configuration via fichier .conf inspiré de NGINX',
+      'Virtual hosts, routes, pages d\'erreur personnalisées',
+      'Upload de fichiers et exécution de scripts CGI',
+      'Chunked transfer encoding',
+      'Gestion robuste des timeouts et erreurs réseau'
+    ],
+    github: 'https://github.com/Fazejli/webserv',
+    demo: '',
+    image: `${import.meta.env.BASE_URL}demo/webserv.png`,
+    images: []
+  },
+    {
     id: 'cub3d',
     title: '🌟 Cub3D',
     subtitle: 'Moteur de rendu 3D type Wolfenstein',
@@ -164,21 +185,26 @@ export const projects = [
     ],
     github: 'https://github.com/Fazejli/Cub3D',
     demo: '',
-    image: '',
+    image: `${import.meta.env.BASE_URL}demo/cub3d.png`,
     images: []
   },
     {
     id: 'cpp-modules',
-    title: 'C++ Modules (00-04)',
+    title: 'C++ Modules (00-09)',
     subtitle: 'Introduction à la POO en C++',
     category: 'school',
-    technologies: ['C++', 'OOP', 'Classes', 'Polymorphism'],
+    technologies: ['C++', 'OOP', 'Classes', 'Polymorphism', 'STL', 'Templates'],
     features: [
       'Module 00: Namespaces, classes, member functions',
       'Module 01: Memory allocation, references, pointers',
       'Module 02: Polymorphisme ad-hoc, surcharge d\'opérateurs',
       'Module 03: Héritage et encapsulation',
       'Module 04: Polymorphisme de sous-typage, classes abstraites',
+      'Module 05: Exceptions et gestion d\'erreurs',
+      'Module 06: Casts C++ (static, dynamic, reinterpret, const)',
+      'Module 07: Templates de fonctions et de classes',
+      'Module 08: Conteneurs STL, itérateurs et algorithmes',
+      'Module 09: Conteneurs STL avancés (BitcoinExchange, RPN, PmergeMe)',
       'Orthodox Canonical Form pour toutes les classes'
     ],
     github: 'https://github.com/Fazejli/CPP',
